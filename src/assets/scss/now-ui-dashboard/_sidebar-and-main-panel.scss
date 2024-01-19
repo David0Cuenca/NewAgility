@@ -89,7 +89,7 @@
             > a{
                 margin: 10px 15px 0;
                 border-radius: $btn-round-radius;
-                color: $white-color;
+                color: $terciary-color;
                 display: block;
                 text-decoration: none;
                 position: relative;
@@ -106,7 +106,7 @@
 
             &:hover:not(.active) > a,
             &:focus:not(.active) > a{
-                background-color: $opacity-1;
+                background-color: $cuarter-color;
 
                 i{
                   color: $white-color;
@@ -115,7 +115,7 @@
 
             &.active > a,
             &.active-pro > a{
-              background-color: $white-color;
+              background-color: $cuarter-color;
               box-shadow: $box-shadow;
               i{
                 color: $danger-color;
@@ -245,8 +245,8 @@
         overflow: hidden;
 
         img{
-            width: 60px;
-            height: 60px;
+            width: 70px;
+            height: 70px;
         }
     }
 
@@ -264,7 +264,7 @@
 
     &:after{
         @include icon-gradient($default-color);
-        z-index: 3;
+        z-index: 2;
     }
 
     &[data-color="blue"]{
@@ -274,10 +274,10 @@
       @include sidebar-color($success-color);
     }
     &[data-color="orange"]{
-      @include sidebar-color($orange-color);
+      @include sidebar-color($light-azure);
     }
     &[data-color="red"]{
-      @include sidebar-color($danger-color);
+      @include sidebar-color($secondary-color);
     }
     &[data-color="yellow"]{
       @include sidebar-color($warning-color);
@@ -311,7 +311,7 @@
     width: $sidebar-width;
     // width: 100%;
     background-color: $light-gray;
-    background-color: #ebecf1;
+    background-color: #142144;
 
     @include transition (0.50s, cubic-bezier(0.685, 0.0473, 0.346, 1));
 

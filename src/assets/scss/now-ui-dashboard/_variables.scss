@@ -17,7 +17,7 @@ $light-black:                #444    !default;
 
 $black-bg:                   rgba(30,30,30,.97) !default;
 
-$black-color:                #2c2c2c !default;
+$black-color:                #142144 !default;
 $black-hr:                   #444444 !default;
 
 $hr-line:                    rgba(0,0,0, .1) !default;
@@ -48,10 +48,16 @@ $default-color:              #888 !default;
 $default-states-color:       lighten($default-color, 6%) !default;
 $default-color-opacity:      rgba(182, 182, 182, .6) !default;
 
-$primary-color:              #f96332 !default;
+$primary-color:              #142144 !default;
 $primary-states-color:       lighten($primary-color, 6%) !default;
 $primary-color-opacity:      rgba(249, 99, 50, .3) !default;
 $primary-color-alert:        rgba(249, 99, 50, .8) !default;
+
+$secondary-color:           #000108 !default;
+
+$terciary-color:            #F04572 !default;
+
+$cuarter-color:             #56E2F8 !default;
 
 $success-color:              #18ce0f !default;
 $success-states-color:       lighten($success-color, 6%) !default;
