@@ -89,7 +89,7 @@ p{
 .card-description,
 .footer-big p,
 .card .footer .stats{
-    color: $dark-gray;
+    color: white;
     font-weight: $font-weight-light;
 }
 .category,
@@ -145,11 +145,11 @@ a.text-gray:focus, a.text-gray:hover{
     }
 
     &.blockquote-primary{
-        border-color: $primary-color;
-        color: $primary-color;
+        border-color: $default-color;
+        color: white;
 
         small{
-            color: $primary-color;
+            color: white    ;
         }
     }
 
