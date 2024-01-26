@@ -1,5 +1,7 @@
 .footer{
     padding: 24px 0;
+    background: rgb(20,33,68);
+    background: linear-gradient(180deg, rgba(20,33,68,1) 0%, rgba(0,212,255,1) 100%); 
 
     &.footer-default{
         background-color: #f2f2f2;
