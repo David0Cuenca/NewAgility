@@ -1,9 +1,7 @@
 <div class="panel-header panel-header-sm"></div>
 <div class="main-content">
-
   <div class="row justify-content-center">
     <div class="col-md-8">
-
       <div class="card">
         <div class="card-header text-center">
           <h5 class="title">Crear una actividad</h5>
@@ -11,7 +9,6 @@
 
         <div class="card-body">
           <form>
-
             <div class="row justify-content-center">
               <div class="col-md-5 pr-1">
                 <div class="form-group">
@@ -21,7 +18,8 @@
                     id="name"
                     class="form-control"
                     placeholder="Username"
-                    value="Nombre_actividad"/>
+                    value="Nombre_actividad"
+                  />
                 </div>
               </div>
 
@@ -40,24 +38,40 @@
             </div>
 
             <div class="row justify-content-center">
-              <div class="col-md-10">
-                <div class="from-input">
-                  <mat-form-field>
-                    <mat-label>Enter a date range</mat-label>
-                    <mat-date-range-input [rangePicker]="picker">
-                      <input matStartDate placeholder="Start date">
-                      <input matEndDate placeholder="End date">
-                    </mat-date-range-input>
-                    <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
-                    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
-                    <mat-date-range-picker #picker></mat-date-range-picker>
-                  </mat-form-field>
+              <div class="col-md-5 pr-1">
+                <label>Fecha Inicio</label>
+                <div class="input-group">
+                  <input
+                    class="form-control"
+                    placeholder="yyyy-mm-dd"
+                    name="dp"
+                    formControlName="startDate"
+                    ngbDatepicker
+                    #d="ngbDatepicker"
+                  />
+                  <button class="btn btn-neutral" (click)="d.toggle()" type="button">
+                    <i class="now-ui-icons ui-1_calendar-60"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="col-md-5 pr-1">
+                <label>Fecha Fin</label>
+                <div class="input-group">
+                  <input
+                    class="form-control"
+                    placeholder="yyyy-mm-dd"
+                    name="dp"
+                    formControlName="endDate"
+                    ngbDatepicker
+                    #d="ngbDatepicker"
+                  />
+                  <button class="btn btn-neutral" (click)="d.toggle()" type="button">
+                    <i class="now-ui-icons ui-1_calendar-60"></i>
+                  </button>
                 </div>
               </div>
             </div>
-
           </form>
-
         </div>
       </div>
     </div>
