@@ -4,7 +4,7 @@ import { BrowserModule  } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
-import { LoginComponent2 } from './login2/login.component';
+import { LoginComponent } from './login/login.component';
 
 
 const routes: Routes =[
@@ -22,7 +22,7 @@ const routes: Routes =[
   }]},
   {
     path: 'auth',
-    component: LoginComponent2,
+    component: LoginComponent,
   },{
     path: '**',
     redirectTo: 'dashboard'
